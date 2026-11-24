@@ -1,0 +1,50 @@
+/* Palette: keep in sync with src/game/palette.ts */
+:root {
+  --forest: #1f4d2b;
+  --green: #8be86a;
+  --olive: #4f9443;
+  --sand: #ecca8c;
+  --water: #3f8f8a;
+  --wood: #8a5e35;
+  --wood-dark: #4a2f1b;
+  --cream: #f4e9c8;
+  --cream-dark: #e2d4a8;
+  --charcoal: #2a2a2e;
+  --coral: #ff6b4a;
+  --coral-dark: #d94a2c;
+  --font: 'Courier New', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--forest);
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 8px 8px;
+  color: var(--charcoal);
+  font-family: var(--font);
+  font-weight: 700;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 2px;
+}
